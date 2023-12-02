@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1550.0" style="-fx-background-color: #fff;" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laba7.controllers.LibraryTableController">
+    <children>
+        <AnchorPane layoutY="93.0" prefHeight="711.0" prefWidth="782.0" style="-fx-background-color: #F4F7FB;">
+            <children>
+                <TableView fx:id="bookTable" prefHeight="711.0" prefWidth="782.0">
+                    <columns>
+                        <TableColumn fx:id="idBookColumn" prefWidth="56.00000077486038" text="ID" />
+                        <TableColumn fx:id="nameBookColumn" prefWidth="183.9999656677246" text="Название" />
+                        <TableColumn fx:id="authorBookColumn" prefWidth="197.6000518798828" text="Автор" />
+                        <TableColumn fx:id="priceBookColumn" prefWidth="148.79998779296875" text="Цена" />
+                        <TableColumn fx:id="isNewBookColumn" prefWidth="196.79998779296875" text="Новое ли издание" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <Label layoutX="280.0" layoutY="14.0" prefHeight="70.0" prefWidth="334.0" text="Таблица книг" textAlignment="CENTER" textFill="#686262">
+            <font>
+                <Font name="System Bold" size="48.0" />
+            </font>
+        </Label>
+      <Label layoutX="10.0" layoutY="40.0" text="F1 - создание новой записи" />
+      <Label layoutX="10.0" layoutY="58.0" text="Delete - удаление записи" />
+      <Label layoutX="10.0" layoutY="75.0" text="Esc - закрыть окно" />
+      <AnchorPane layoutX="870.0" layoutY="93.0" prefHeight="711.0" prefWidth="681.0" style="-fx-background-color: #F4F7FB;">
+         <children>
+            <TableView fx:id="readerTable" layoutX="-25.0" prefHeight="711.0" prefWidth="706.0">
+               <columns>
+                  <TableColumn fx:id="idReaderColumn" prefWidth="69.0" text="ID" />
+                  <TableColumn fx:id="ticketNumberColumn" prefWidth="165.5999755859375" text="номерБилета" />
+                  <TableColumn fx:id="phoneColumn" prefWidth="149.5999755859375" text="Телефон" />
+                  <TableColumn fx:id="nameReaderColumn" prefWidth="321.599853515625" text="Фио" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="1034.0" layoutY="14.0" prefHeight="70.0" prefWidth="469.0" text="Таблица читателей" textAlignment="CENTER" textFill="#686262">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
